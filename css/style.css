@@ -1,12 +1,17 @@
-:root {
-	--default-green: #1db954;
-	--light-green: #1ed760;
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed760;
 }
 
 body {
@@ -55,24 +60,20 @@ body {
 	padding: 20px 0;
 }
 
-#navbar .navbar-container ul {
+.navbar-container ul {
 	display: flex;
 	list-style: none;
 	font-weight: bold;
 }
 
-#navbar .navbar-container ul li {
+.navbar-container ul li {
 	padding: 0 20px;
 	transition: all 300ms ease;
 }
 
-#navbar .navbar-container ul li:hover {
+.navbar-item a:hover {
 	color: #1db954;
 	cursor: pointer;
-}
-
-#navbar .navbar-container ul li:nth-child(3) {
-	border-right: 1px solid white;
 }
 
 /* Showcase */
@@ -183,23 +184,24 @@ body {
 	cursor: pointer;
 }
 
-.footer-info .rights .country {
+.footer-info .rights {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	margin-bottom: 10px;
 }
 
-.footer-info .rights .country p {
+.footer-info .rights p {
 	transition: all 300ms ease;
+	text-align: center;
 }
 
-.footer-info .rights .country p:hover {
+.footer-info .rights p:hover {
 	color: var(--default-green);
 	cursor: pointer;
 }
 
-.footer-info .rights .country .brazil-flag {
+.footer-info .rights{
 	height: 20px;
 	width: auto;
 	display: inline-block;
