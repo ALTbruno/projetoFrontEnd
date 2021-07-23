@@ -1,0 +1,131 @@
+/*      Esse é só um prototipo que fiz até aqui da página de sobre, alterei algumas coisas no CSS original
+        pra tentar deixar responsivo, mas acho que vai ser necessário usar Media Query, Grid, eu realmente não sei, aceito sugestões, imploro na verdade.*/
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed760;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Section Cabeçalho */
+.cabecalho {
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+/* Cabeçalho > Barra de navegação */
+.cabecalho .navbar {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho .navbar .navbar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.cabecalho .navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.cabecalho .navbar-container ul li {
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+.cabecalho .navbar .navbar-container ul li:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.cabecalho .navbar-container ul li:nth-child(3) {
+	border-right: 1px solid white;
+}
+
+.cabecalho #parallax {
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    background-image: url("../img/about-img-parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+}
+
+.cabecalho #parallax .sub-cabecalho {
+    border: solid white;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    text-shadow: black 0 -1.5px;
+    padding: 11px 12px;
+}
+
+.conteudo-pg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.conteudo-pg .conteudo-pg-container {
+    width: 60%;
+    margin: auto;
+}
+
+.conteudo-pg .paragrafo{
+	display: flex;
+	text-align: left;
+    padding: 15px 0;
+}
+
+.conteudo-pg-container .titulo {
+    padding: 12px;
+    text-align: right;
+}
+
+.conteudo-pg-container .subtitulo {
+    padding: 12px 0;
+}
+
+.conteudo-pg-container .subtitulo1 {
+    padding: 12px 0;
+    text-align: right;
+}
+
+.cor-destaque {
+    color: var(--default-green);
+    font-weight: bold;
+}
