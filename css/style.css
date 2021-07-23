@@ -193,6 +193,7 @@ body {
 
 .footer-info .rights p {
 	transition: all 300ms ease;
+	text-align: center;
 }
 
 .footer-info .rights p:hover {
