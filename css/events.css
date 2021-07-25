@@ -1,0 +1,168 @@
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed760;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho #parallax {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/events-img-parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+}
+
+.cabecalho #parallax .sub-cabecalho {
+    border: solid white;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    text-shadow: black 0 -1.5px;
+    padding: 11px 12px;
+}
+
+.conteudo-pg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.conteudo-pg .conteudo-pg-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#events-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.conteudo-pg .conteudo-pg-container .dados-evento {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding-bottom: 26px;
+}
+
+#events-container .data-evento {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 12px 12px 0 0;
+}
+
+.conteudo-pg .conteudo-pg-container #events-container .detalhes-evento.a, .detalhes-evento.b, .detalhes-evento.c, .detalhes-evento.d {
+    background-image: url("../img/artists/jasmine.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.detalhes-evento.b {
+    background-image: url("../img/artists/jasmine.jpg");
+}
+
+.detalhes-evento.c {
+    background-image: url("../img/artists/jasmine.jpg");
+}
+
+.detalhes-evento.d {
+    background-image: url("../img/artists/jasmine.jpg");
+}
+
+.detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
+    padding: 28px 0 2px;
+}
+
+.detalhes-evento.a > .descricao-evento, .detalhes-evento.b > .descricao-evento, .detalhes-evento.c > .descricao-evento, .detalhes-evento.d > .descricao-evento {
+    display: inline-flex;
+    padding-bottom: 12px;
+}
+.detalhes-evento.a > .links-evento, .detalhes-evento.b > .links-evento, .detalhes-evento.c > .links-evento, .detalhes-evento.d > .links-evento {
+    padding-bottom: 22px;
+}
+
+.links-evento a:hover, a:active {
+    color: #1db954;
+	cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.conteudo-pg .paragrafo{
+	display: flex;
+	text-align: center;
+    padding: 5px 0 30px;
+    margin: 0 auto;
+}
+
+.conteudo-pg-container .titulo {
+    text-align: center;
+    padding: 30px 0 6px;
+    font-weight: 600;
+}
+
+.conteudo-pg-container .subtitulo {
+    padding: 12px 0;
+}
+
+.cor-destaque {
+    color: var(--default-green);
+    font-weight: 600;
+}
+ /* CSS Eventos Desktop */
+@media (min-width: 1120px) {
+    #events-container {
+        display: grid;
+        gap: 50px ;
+        column-gap: 10px;
+        padding-bottom: 90px;
+    }
+    
+    .conteudo-pg .conteudo-pg-container .dados-evento {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 66%;
+        gap: 100px 50px;
+        text-align: center;
+    }
+    .conteudo-pg .conteudo-pg-container #events-container .detalhes-evento.a, .detalhes-evento.b, .detalhes-evento.c, .detalhes-evento.d {
+        border-radius: 12px;
+    }
+
+    .detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
+        padding: 28px 0 26px;
+    }
+    
+    #events-container .data-evento {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        color: white;
+        margin: 0 auto;
+        padding: 50px;
+        border-radius: 12px;
+    }
+}
