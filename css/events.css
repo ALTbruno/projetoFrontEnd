@@ -82,7 +82,7 @@
 }
 
 .detalhes-evento.b {
-    background-image: url("../img/artists/jasmine.jpg");
+    background-image: url("../img/artists/band-member.jpg");
 }
 
 .detalhes-evento.c {
@@ -90,11 +90,12 @@
 }
 
 .detalhes-evento.d {
-    background-image: url("../img/artists/jasmine.jpg");
+    background-image: url("../img/artists/band-member.jpg");
 }
 
 .detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
     padding: 28px 0 2px;
+    text-shadow: black 0 -1.5px;
 }
 
 .detalhes-evento.a > .descricao-evento, .detalhes-evento.b > .descricao-evento, .detalhes-evento.c > .descricao-evento, .detalhes-evento.d > .descricao-evento {
@@ -134,6 +135,21 @@
 }
  /* CSS Eventos Desktop */
 @media (min-width: 1120px) {
+
+    .cabecalho #parallax {
+        padding: 5% 0 0 0;
+    }
+
+    .cabecalho #parallax .sub-cabecalho {
+        border: solid white;
+        border-radius: 12px;
+        width: 60%;
+        margin: auto;/* 13.4% auto auto; */
+        text-align: center;
+        text-shadow: black 0 -1.5px;
+        padding: 11px 12px;
+    }
+
     #events-container {
         display: grid;
         gap: 50px ;
@@ -144,7 +160,7 @@
     .conteudo-pg .conteudo-pg-container .dados-evento {
         width: 100%;
         display: grid;
-        grid-template-columns: 33% 66%;
+        grid-template-columns: 33% 61%;
         gap: 100px 50px;
         text-align: center;
     }

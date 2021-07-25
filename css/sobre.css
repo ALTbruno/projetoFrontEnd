@@ -65,3 +65,9 @@
     color: var(--default-green);
     font-weight: bold;
 }
+
+@media (min-width: 1120px) {
+    .cabecalho #parallax {
+        padding: 5% 0 0 0;
+    }
+}
