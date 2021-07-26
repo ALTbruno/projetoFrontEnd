@@ -84,6 +84,41 @@ body{
     margin: 0 auto;
 }
 
+.footer {
+    background: black;
+	color: white;
+    width: 100vw;
+    height: 160px;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    padding: 12px 12px;
+}
+
+.footer .footer-content .copyright-text {
+    display: flex;
+    padding: 2px 2px;
+}
+
+.footer .footer-content .copyright-text {
+    display: flex;
+    padding: 2px 2px;
+}
+
+.footer .footer-content .logo {
+    display: flex;
+    margin: 0 auto;
+    padding: 2px;
+}
+
     /* CSS Desktop */
     @media (min-width: 1120px) {
         /* Cabeçalho > Barra de navegação */
