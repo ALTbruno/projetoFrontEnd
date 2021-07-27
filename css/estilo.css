@@ -64,7 +64,7 @@ body{
 }
 
 .cabecalho #artista {
-    background-image: url("../img/about-img-parallax.jpg");
+    background-image: url("/img/artists/chad-kirchoff-MTTb30pMlLI-unsplash.jpg");
 }
 
 .cabecalho .parallax .sub-cabecalho {
@@ -82,6 +82,67 @@ body{
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+}
+
+.cor-destaque {
+    color: var(--cor-padrao);
+    font-weight: 600;
+}
+
+.conteudo-pg-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.artista-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.artista-container h1 {
+    margin: 25px 0 10px;
+    text-align: center;
+}
+
+.img-artista.a, .img-artista.b, .img-artista.c, .img-artista.d, .img-artista.e, .img-artista.f {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    margin: 5px 0 20px;
+    background-image: url("/img/artists/band-member.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.img-artista.b {
+    background-image: url("/img/artists/jasmine.jpg");
+}
+
+.img-artista.c {
+    background-image: url("/img/artists/harry-shelton-Mcdb3FLUAJw-unsplash.jpg");
+}
+
+.img-artista.d {
+    background-image: url("/img/artists/marius-gerome-photography-1Ys3LiqFYeQ-unsplash.jpg");
+}
+
+.img-artista.e {
+    background-image: url("/img/artists/obafemi-moyosade-zndslHAXhAw-unsplash.jpg");
+}
+
+.img-artista.f {
+    background-image: url("/img/artists/slim-emcee-cIq6fwWQLu4-unsplash.jpg");
+}
+
+.artista-descricao h2 {
+    margin: 25px 0 10px;
+    font-size: 20px;
+}
+
+.artista-descricao p {
+    margin: 5px 0 20px;
 }
 
 .footer {
@@ -151,9 +212,18 @@ body{
         .cabecalho .navbar-container ul li:nth-child(3) {
             border-right: 1px solid white;
         }
+
+        .conteudo-pg .conteudo-pg-container .artista-container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 100px 50px;
+            text-align: center;
+        }
+
     }
         /* CSS Celular */
-    @media (max-width: 1119px) {
+    @media (max-width: 1120px) {
         .cabecalho .navbar .navbar-container ul {
             display: flex;
             flex-direction: column;
@@ -221,4 +291,3 @@ body{
         border-radius: 12px;
     }
 }
-
