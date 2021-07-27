@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./normalize.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/favicon.png">
     <title>Music House</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+	<link rel="icon" type="image/x-icon" href="../img/favicon.jpg" >
 </head>
 <body>
-
-    <header>
-
-        <nav>
-            <a href="#"><img src="./img/logo_house.png" alt="Logo" class="logo"></a>
-            <ul class="company-navbar">
-                <li><a href="./pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="./pages/contact.html">Contato</a></li>
-            </ul>
-            <ul>
-                <li><a href="./pages/events.html">Eventos</a></li>
-                <li><a href="./pages/signup.html">Seja um Houser</a></li>
-                <li><a href="./pages/login.html">Entrar</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <section class="cabecalho">
+        <navbar class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <a href="/index.html"><img src="../img/logo-house.png" alt="Music House" class="logo"/></a>
+                </div>                
+                <ul class="navbar-items">
+                    <li class="navbar-item"><a href="/pages/sobre.html">Sobre nós</a></li>
+                    <li class="navbar-item"><a href="/pages/events.html">Eventos</a></li>
+                    <li class="navbar-item"><a href="/pages/contact.html">Contato</a></li>
+                    <li class="navbar-item"><a href="/pages/signup.html">Seja um Houser</a></li>
+                    <li class="navbar-item"><a href="/pages/login.html">Entrar</a></li>
+                </ul>
+            </div>
+        </navbar>
+    </section>
     <main>
-        <section class="section-container background-section">
-            <h2>TOP ARTISTAS</h2>
-            <div>
-                <div class="top-artist"><a href="./pages/artist-page.html"></a>Artista 1</div>
-                <div class="top-artist">Artista 2</div>
-                <div class="top-artist">Artista 3</div>
-                <div class="top-artist">Artista 4</div>
-                <div class="top-artist">Artista 5</div>
+        <section class="section-container">
+            <div class="title-container">
+                <h2>Conheça nossos artistas</h2>
+            </div>
+            <div class="section-content">
+                <a href="./pages/artists/artist-page.html" class="artista"><span>Artista 1</span></a>
+                <a href="./pages/artists/artist-page2.html" class="artista"><span>Artista 2</span></a>
+                <a href="./pages/artists/artist-page3.html" class="artista"><span>Artista 3</span></a>
+                <a href="./pages/artists/artist-page4.html" class="artista"><span>Artista 4</span></a>
+                <a href="./pages/artists/artist-page5.html" class="artista"><span>Artista 5</span></a>
+                <a href="./pages/artists/artist-page6.html" class="artista"><span>Artista 6</span></a>
             </div>
         </section>
     </main>
-
-    <footer>
-        <a href=""><img src="./img/logo.png" alt="" class="footer-logo"></a>
-        <div class="rights">
-            <p>&copy; 2021 Music House</p>
-        </div>
-        <div class="legal-links">
-            <ul>
-                <li><a href="#">Termos e Condições</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">LGPD</a></li>
-            </ul>
-        </div>
-        <div class="socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="/img/logo-house.png" alt="Logo Music House" class="logo">
+            <p class="copyright-text"> &copy; Music House 2021 <br> Desenvolvido pelo Grupo 2 da Turma 5 de FrontEnd I do CTD</p>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
 </body>
 </html>
