@@ -22,7 +22,7 @@ body{
     width: auto;
 }
 
-/* Section Cabeçalho */
+/* INÍCIO - Estilização da Section Cabeçalho */
 .cabecalho {
     width: 100vw;
     background-color: black;
@@ -45,11 +45,17 @@ body{
     color: white;
 }
 
-/* CSS Página Incial *
+/* INÍCIO - Estilização de Elementos Únicos da Página Incial *
     * 
     *
-* FIM CSS Página Incial */
+* FIM - Página Incial */
 
+/* INÍCIO - Estilização de Elementos comuns de todas as páginas
+    * Banner parallax abaixo do cabeçalho
+    * Subcabeçalho
+    * Divs e caixas
+    * Títulos & Paragráfos
+*/
 .cabecalho .parallax {
     display: flex;
     height: 40vh;
@@ -67,8 +73,16 @@ body{
     background-image: url("/img/artists/chad-kirchoff-MTTb30pMlLI-unsplash.jpg");
 }
 
+.cabecalho #about {
+    background-image: url("../img/about-img-parallax.jpg");
+}
+
+.cabecalho #eventos {
+    background-image: url("../img/events-img-parallax.jpg");
+}
+
 .cabecalho .parallax .sub-cabecalho {
-    border: solid white;
+    border: solid var(--cor-padrao);
     border-radius: 8px;
     width: 60%;
     margin: auto;
@@ -94,6 +108,107 @@ body{
     margin: 0 auto;
 }
 
+/* INÍCIO - Estilização dos elementos da página "Sobre nós" */
+.conteudo-pg-container .text-content .titulo, .subtitulo {
+    padding: 15px 0 0;
+}
+
+.conteudo-pg-container .text-content .paragrafo {
+    display: flex;
+	text-align: left;
+    padding: 15px 0 25px;
+}
+/* FIM - Sobre nós */
+
+/* INÍCIO - Estilização de componentes da página "Eventos" */
+#events-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+#events-container .dados-evento {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding-bottom: 26px;
+}
+
+#events-container .data-evento {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.conteudo-pg .conteudo-pg-container #events-container .detalhes-evento.a, .detalhes-evento.b, .detalhes-evento.c, .detalhes-evento.d {
+    background-image: url("../img/artists/jasmine.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+    color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.detalhes-evento.b {
+    background-image: url("../img/artists/band-member.jpg");
+}
+
+.detalhes-evento.c {
+    background-image: url("../img/artists/jasmine.jpg");
+}
+
+.detalhes-evento.d {
+    background-image: url("../img/artists/band-member.jpg");
+}
+
+.detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
+    padding: 28px 0 2px;
+    text-shadow: black 0 -1.5px;
+}
+
+.detalhes-evento.a > .descricao-evento, .detalhes-evento.b > .descricao-evento, .detalhes-evento.c > .descricao-evento, .detalhes-evento.d > .descricao-evento {
+    display: inline-flex;
+    padding-bottom: 12px;
+}
+.detalhes-evento.a > .links-evento, .detalhes-evento.b > .links-evento, .detalhes-evento.c > .links-evento, .detalhes-evento.d > .links-evento {
+    padding-bottom: 22px;
+}
+
+.links-evento a:hover, a:active {
+    color: var(cor-padrao);
+	cursor: pointer;
+    transition: all 300ms ease;
+}
+.conteudo-pg .paragrafo{
+	display: flex;
+	text-align: center;
+    padding: 5px 0 30px;
+    margin: 0 auto;
+}
+
+.conteudo-pg-container .titulo {
+    text-align: center;
+    padding: 30px 0 6px;
+    font-weight: 600;
+}
+
+.conteudo-pg-container .subtitulo {
+    padding: 12px 0;
+}
+/*  * 
+    *
+    *
+FIM - Estilização página de Eventos*/
+
+/* INICIO - Estilização de componentes das páginas de artistas */
 .artista-container {
     display: flex;
     flex-direction: column;
@@ -144,7 +259,9 @@ body{
 .artista-descricao p {
     margin: 5px 0 20px;
 }
+/* FIM - Estilização de componentes das páginas de artistas  */
 
+/* INÍCIO - Footer */
 .footer {
     background: black;
 	color: white;
@@ -179,6 +296,7 @@ body{
     margin: 0 auto;
     padding: 2px;
 }
+/* FIM - Footer */
 
     /* CSS Desktop */
     @media (min-width: 1120px) {
