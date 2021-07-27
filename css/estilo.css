@@ -145,7 +145,7 @@ body{
     background-image: url(../img/artists/slim-emcee-cIq6fwWQLu4-unsplash.jpg  ); 
 }
 
-/* CSS Eventos Desktop */
+/* CSS ELementos Página Inicial Desktop */
 @media (min-width: 1120px) {
     .section-container {
         height: 100vh;
@@ -337,6 +337,12 @@ body{
     *
 FIM - Estilização página de Eventos*/
 
+/* COLOCAR AQUI A ESTILIZAÇÃO DOS FORMS
+    *
+    *
+    * */
+
+
 /* INICIO - Estilização de componentes das páginas de artistas */
 .artista-container {
     display: flex;
@@ -388,7 +394,8 @@ FIM - Estilização página de Eventos*/
 .artista-descricao p {
     margin: 5px 0 20px;
 }
-/* FIM - Estilização de componentes das páginas de artistas  */
+/*
+FIM - Estilização de componentes das páginas de artistas  */
 
 /* INÍCIO - Footer */
 .footer {
@@ -425,7 +432,8 @@ FIM - Estilização página de Eventos*/
     margin: 0 auto;
     padding: 2px;
 }
-/* FIM - Footer */
+/*
+FIM - Footer */
 
     /* CSS Desktop */
     @media (min-width: 1120px) {
