@@ -239,14 +239,21 @@ body{
 }
 
 /* INÍCIO - Estilização dos elementos da página "Sobre nós" */
-.conteudo-pg-container .text-content .titulo, .subtitulo {
+.text-content .titulo, .subtitulo {
     padding: 15px 0 0;
 }
 
-.conteudo-pg-container .text-content .paragrafo {
-    display: flex;
+.text-content .titulo h1, .subtitulo h2 {
+    text-align: left;
+}
+
+.text-content .paragrafo {
+    text-align: center;
+}
+
+.text-content p {
 	text-align: left;
-    padding: 15px 0 25px;
+    padding: 5px 0 5px;
 }
 /* FIM - Sobre nós */
 
@@ -317,6 +324,9 @@ body{
 	cursor: pointer;
     transition: all 300ms ease;
 }
+
+/* Media  */
+
 .conteudo-pg .paragrafo{
 	display: flex;
 	text-align: center;
@@ -477,6 +487,58 @@ FIM - Footer */
             text-align: center;
         }
 
+        .cabecalho .parallax {
+            padding: 5% 0 0 0;
+        }
+    
+        .cabecalho .parallax .sub-cabecalho {
+            border: solid white;
+            border-radius: 12px;
+            width: 60%;
+            margin: auto;/* 13.4% auto auto; */
+            text-align: center;
+            text-shadow: black 0 -1.5px;
+            padding: 11px 12px;
+        }
+
+        .text-content .paragrafo {
+            text-align: center;
+        }
+    
+        #events-container {
+            display: grid;
+            gap: 50px ;
+            column-gap: 10px;
+            padding-bottom: 90px;
+        }
+        
+        #events-container .dados-evento {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33% 61%;
+            gap: 100px 50px;
+            text-align: center;
+        }
+
+        .conteudo-pg .conteudo-pg-container #events-container .detalhes-evento.a, .detalhes-evento.b, .detalhes-evento.c, .detalhes-evento.d {
+            border-radius: 12px;
+        }
+    
+        .detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
+            padding: 28px 0 26px;
+        }
+        
+        #events-container .data-evento {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            color: white;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+
     }
         /* CSS Celular */
     @media (max-width: 1120px) {
@@ -498,52 +560,3 @@ FIM - Footer */
             margin: 0 auto;
         }
     }
-
-@media (min-width: 1120px) {
-
-    .cabecalho .parallax {
-        padding: 5% 0 0 0;
-    }
-
-    .cabecalho .parallax .sub-cabecalho {
-        border: solid white;
-        border-radius: 12px;
-        width: 60%;
-        margin: auto;/* 13.4% auto auto; */
-        text-align: center;
-        text-shadow: black 0 -1.5px;
-        padding: 11px 12px;
-    }
-
-    #events-container {
-        display: grid;
-        gap: 50px ;
-        column-gap: 10px;
-        padding-bottom: 90px;
-    }
-    
-    .conteudo-pg .conteudo-pg-container .dados-evento {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 33% 61%;
-        gap: 100px 50px;
-        text-align: center;
-    }
-    .conteudo-pg .conteudo-pg-container #events-container .detalhes-evento.a, .detalhes-evento.b, .detalhes-evento.c, .detalhes-evento.d {
-        border-radius: 12px;
-    }
-
-    .detalhes-evento.a > h2, .detalhes-evento.b > h2, .detalhes-evento.c > h2, .detalhes-evento.d > h2 {
-        padding: 28px 0 26px;
-    }
-    
-    #events-container .data-evento {
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        color: white;
-        margin: 0 auto;
-        padding: 50px;
-        border-radius: 12px;
-    }
-}
