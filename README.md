@@ -1,6 +1,6 @@
-Certified Tech Developer - Front End I | Digital House
+## Certified Tech Developer - Front End I | Digital House
 
-## Link pra ver o site ao vivo
+Link pra ver o site ao vivo
 https://brunoribarbosa.github.io/projetoFrontEnd/
 
 
