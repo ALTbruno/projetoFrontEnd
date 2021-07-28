@@ -190,7 +190,7 @@ body{
     display: flex;
     height: 40vh;
     width: 100%;
-    background-image: url("/img/artists/band-member.jpg");
+    background-image: url("../img/artists/band-member.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ body{
 }
 
 .cabecalho #artista {
-    background-image: url("/img/artists/chad-kirchoff-MTTb30pMlLI-unsplash.jpg");
+    background-image: url("../img/artists/chad-kirchoff-MTTb30pMlLI-unsplash.jpg");
 }
 
 .cabecalho #about {
@@ -360,7 +360,7 @@ FIM - Estilização página de Eventos*/
     height: 40vh;
     width: 100%;
     margin: 5px 0 20px;
-    background-image: url("/img/artists/band-member.jpg");
+    background-image: url("../img/artists/band-member.jpg");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -368,23 +368,23 @@ FIM - Estilização página de Eventos*/
 }
 
 .img-artista.b {
-    background-image: url("/img/artists/jasmine.jpg");
+    background-image: url("../img/artists/jasmine.jpg");
 }
 
 .img-artista.c {
-    background-image: url("/img/artists/harry-shelton-Mcdb3FLUAJw-unsplash.jpg");
+    background-image: url("../img/artists/harry-shelton-Mcdb3FLUAJw-unsplash.jpg");
 }
 
 .img-artista.d {
-    background-image: url("/img/artists/marius-gerome-photography-1Ys3LiqFYeQ-unsplash.jpg");
+    background-image: url("../img/artists/marius-gerome-photography-1Ys3LiqFYeQ-unsplash.jpg");
 }
 
 .img-artista.e {
-    background-image: url("/img/artists/obafemi-moyosade-zndslHAXhAw-unsplash.jpg");
+    background-image: url("../img/artists/obafemi-moyosade-zndslHAXhAw-unsplash.jpg");
 }
 
 .img-artista.f {
-    background-image: url("/img/artists/slim-emcee-cIq6fwWQLu4-unsplash.jpg");
+    background-image: url("../img/artists/slim-emcee-cIq6fwWQLu4-unsplash.jpg");
 }
 
 .artista-descricao h2 {
